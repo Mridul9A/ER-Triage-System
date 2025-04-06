@@ -18,7 +18,7 @@ class SimulationService {
       
       // Randomly treat and discharge patients
       this.processRandomPatients();
-    }, 1000); // Every 5 seconds
+    }, 1000); 
   }
   
   stopSimulation() {
