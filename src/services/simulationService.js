@@ -11,7 +11,6 @@ class SimulationService {
     if (this.isRunning) return;
     
     this.isRunning = true;
-    console.log('Starting ER simulation mode');
     
     // Add patients at random intervals
     this.interval = setInterval(() => {
@@ -19,7 +18,7 @@ class SimulationService {
       
       // Randomly treat and discharge patients
       this.processRandomPatients();
-    }, 5000); // Every 5 seconds
+    }, 1000); // Every 5 seconds
   }
   
   stopSimulation() {
