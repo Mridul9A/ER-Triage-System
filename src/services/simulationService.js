@@ -26,7 +26,6 @@ class SimulationService {
     
     clearInterval(this.interval);
     this.isRunning = false;
-    console.log('Stopping ER simulation mode');
   }
   
   addRandomPatient() {
@@ -76,8 +75,7 @@ class SimulationService {
   }
   
   getWeightedRandomTriageLevel() {
-    // Weighted distribution of triage levels
-    // 10% Level 1, 20% Level 2, 30% Level 3, 25% Level 4, 15% Level 5
+   
     const rand = Math.random();
     if (rand < 0.1) return 1;
     if (rand < 0.3) return 2;
